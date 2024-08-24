@@ -254,6 +254,81 @@ article.active {
   100% { opacity: 1; }
 }
 
+
+/* Styling the Download Resume button */
+/* Styling the Download Resume button */
+.resume-download {
+  margin-left: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-download a {
+  text-decoration: none;
+}
+
+.resume-button button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: var(--orange-yellow-crayola); /* Text color */
+  border: 2px solid var(--orange-yellow-crayola);
+  padding: 8px 16px; /* Adjusted padding for better spacing */
+  border-radius: 15px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  cursor: pointer;
+  transition: color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+/* Icon inside the button */
+.resume-button button i {
+  margin-right: 12px; /* Space between icon and text */
+  font-size: 18px; /* Size of the icon */
+ color:#FFDB6E; /* Different color for the icon */
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+/* Hover effects */
+.resume-button button:hover {
+ /* Change text color on hover */
+  border-color: var(--vegas-gold); /* Change border color on hover */
+  transform: scale(1.05);
+  box-shadow: var(--shadow-glow);
+}
+
+.resume-button button:hover i {
+  color: var(--orange-yellow-crayola); /* Swap icon color on hover */
+  transform: translateY(-2px); /* Slightly lifts the icon on hover */
+}
+
+/* Active effects */
+.resume-button button:active {
+  transform: scale(0.98);
+}
+
+.resume-button button:active i {
+  transform: translateY(0); /* Returns to normal position on active state */
+}
+
+/* Aligning with other elements */
+.resume-download {
+  margin: 16px 0;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .resume-button button {
+    width: 100%;
+    font-size: var(--fs-5);
+    padding: 10px 20px;
+  }
+}
+
+
+
 .h2,
 .h3,
 .h4,
